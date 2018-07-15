@@ -1,0 +1,503 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+
+a{text-decoration: none;}
+
+.c-all{
+	width: 100%;
+	background: rgb(244, 244, 244);
+}
+
+.h600{height: 600px;}
+.h800{height: 800px;}
+.h1000{height: 1000px;}
+.h1200{height: 1200px;}
+
+.w1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.cut-banner{
+	position: relative;
+	width: 100%;
+	height: 420px;
+	background: url(../img/png-banner.jpg) no-repeat center;
+}
+.relative{
+	position: relative;
+}
+/*标题*/
+.cut-banner .cut-title{
+	position: absolute;
+	top: 130px;
+	left: 400px;
+	font-size: 42px;
+	color: white;
+	opacity: 0;
+}
+/*搜索框*/
+.cut-banner .cut-input{
+	position: absolute;
+	top: 240px;
+	left: 160px;
+	width: 600px;
+	height: 44px;
+	border: #008AFF solid 1px;
+	opacity: 0;
+	
+}
+/*按钮*/
+.cut-banner .cut-search{
+	position: absolute;
+	top: 240px;
+	left: 760px;
+	width: 100px;
+	height: 44px;
+	background: rgb(0, 130, 223);
+	border: rgb(0, 130, 223) solid 1px;
+	color: white;
+	text-align: center;
+	line-height: 44px;
+	opacity: 0;
+}
+/*动画*/
+.cut-input{
+	animation: appearinput 0.6s 1 0.3s;
+	animation-fill-mode: forwards;
+}
+.cut-title,.cut-search{
+	animation: appear 0.6s 1 0.3s;
+	animation-fill-mode: forwards;
+}
+@keyframes appearinput{
+	from{
+		transform: translateY(200px);
+		opacity: 0;
+		}
+	to{
+		transform: translateY(0px);
+		opacity: 0.6;
+		}
+}
+@keyframes appear{
+	from{
+		transform: translateY(200px);
+		opacity: 0;
+		}
+	to{
+		transform: translateY(0px);
+		opacity: 1;
+		}
+}
+/*右侧介绍*/
+.cut-banner .cut-ul{
+	position: absolute;
+	top: 80px;
+	right: 45px;
+	font-size: 20px;
+	line-height: 60px;
+	color: white;
+}
+/*下载按钮*/
+.cut-banner .cut-download{
+	position: absolute;
+	top: 340px;
+	right: 30px;
+	width: 200px;
+	height: 44px;
+	background: rgb(0, 130, 223);
+	color: white;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.cut-banner .cut-download .cut-bling{
+	position: absolute;
+	width: 100px;
+	height: 12px;
+	top: 10px;
+	left: 0px;
+	background: rgba(255, 255, 255, 0.5);
+	transform: translateX(-100px) rotate(-45deg);
+}
+/*动图*/
+.cut-banner .cut-download:hover .cut-bling{
+	transform: translateX(200px) rotate(-45deg);
+	transition: all 1s;
+	transition-timing-function: cubic-bezier(0.8, 0.2, 0.9, 0.4);
+}
+/*热词框*/
+.cut-banner .cut-hot{
+	top: 284px;
+	left: 160px;
+	position: absolute;
+	width: 599px;
+	background: white;
+	border: rgb(0, 130, 223) solid 1px;
+	z-index: 10;
+	display: none;
+}
+/*萌萌哒分割线*/
+.cut-banner .cut-line{
+	width: 600px;
+	height: 1px;
+	background: gray;
+}
+/*最近搜索*/
+.cut-banner .cut-rela{
+	width: 100%;
+	height: 60px;
+}
+/*最近搜索logo*/
+.cut-banner .cut-rela img{
+	float: left;
+	margin-top: 22px;
+	margin-left: 24px;
+	margin-right: 8px;
+}
+/*最近搜索文字*/
+.cut-banner .cut-relaword{
+	line-height: 60px;
+	color: rgb(27, 99, 174);
+}
+/*每一个热词栏*/
+.cut-banner .cut-item{
+	cursor: pointer;
+	position: relative;
+	height: 36px;
+	width: 100%;
+}
+.cut-banner .cut-item:hover{
+	background: rgb(229, 246, 255);
+}
+/*所有p标签的大小*/
+.cut-hot p{
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+/*所有hot动图*/
+.cut-hot .cut-item img{
+	margin-top: 16px;
+	margin-left: 40px;
+}
+/*热词*/
+.cut-banner .cut-hotword{
+	position: relative;
+	top: 8px;
+	left: 24px;
+	color: red;
+	float: left;
+}
+/*普通词*/
+.cut-banner .cut-word{
+	position: absolute;
+	top: 8px;
+	left: 24px;
+	color: grey;
+	float: left;
+}
+/*结果数*/
+.cut-banner .cut-ans{
+	position: absolute;
+	top: 8px;
+	right: 30px;
+	color: grey;
+	float: right;
+}
+/*******************************************/
+/*框架*/
+.cut-classify{
+	position: relative;
+	height: 270px;
+	padding-top: 20px;
+}
+/*框架*/
+.cut-good{
+	position: relative;
+	height: 360px;
+	padding-top: 20px;
+}
+/*图片logo*/
+.cut-class img{
+	float: left;
+	margin-right: 20px;
+}
+.cut-good img{
+	float: left;
+	margin-right: 20px;
+}
+/*分类文本*/
+.cut-class h3{
+	color: black;
+	margin: 40px 0;
+}
+/*精品专题文本*/
+.cut-good h3{
+	float: left;
+	color: black;
+	/*margin: 40px 0;*/
+}
+/*分类的具体项目*/
+.cut-content p{
+	cursor: pointer;
+	float: left;
+	width: 120px;
+	height: 60px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	border-radius: 5px;
+	box-shadow: rgb(210, 210, 210) 0 0 5px;
+	line-height: 60px;
+	text-align: center;
+}
+/*动画*/
+.cut-classify p:hover{
+	color: white;
+	background: rgb(0, 130, 223);
+}
+/*很酷的div*/
+ .cut-cool{
+	position: absolute;
+	width: 1200px;
+	height: 4px;
+	background-color: white;
+	top: 100px;
+	left: 0px;
+}
+.cut-good .cut-goodarea{
+	height: 40px;
+	margin: 40px 0;
+}
+/*更多链接*/
+.cut-good .cut-goodarea a{
+	float: right;
+	line-height: 40px;
+	color: black;
+	font-size: 18px;
+}
+/*链接经过效果*/
+.cut-good .cut-goodarea a:hover{
+	color: rgb(0, 130, 223);
+}
+/*每一个专题*/
+.cut-goodone{
+	position: relative;
+	float: left;
+	width: 240px;
+	height: 200px;
+	/*background: #008AFF;*/
+	margin-right: 60px;
+}
+/*专题中的图片*/
+.cut-goodone img{
+	position: absolute;
+	top: 0;
+	left: 40px;
+}
+/*专题中的文本*/
+.cut-goodone p{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	line-height: 40px;
+}
+/*******************************************/
+/*整体*/
+.cut-yeshot{
+	height: 100%;
+}
+/*logo*/
+.cut-yeshot img{
+	float: left;
+	margin-right: 20px;
+}
+.cut-yeshot h3{
+	float: left;
+	margin-right: 20px;
+}
+.cut-yeshot a{
+	float: right;
+	line-height: 40px;
+	color: black;
+	font-size: 18px;
+}
+.cut-yeshot a:hover{
+	color: rgb(0, 130, 223);
+}
+/*昨日热门下载文本*/
+.cut-yeshothead{
+	height: 40px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+/*整个背景*/
+.cut-yeshotbody{
+}
+/*昨日热门的 一项*/
+.cut-yeshotbody .cut-yhbcontent{
+	position: relative;
+	float: left;
+	width: 275px;
+	height: 300px;
+	margin-left: 33px;
+	margin-bottom: 10px;
+	z-index: 8;
+	margin-bottom: 40px;
+	transition: all 0.2s;
+	overflow: hidden;
+}
+.cut-first{
+	margin-left: 0px !important;
+}
+/*白色蒙版*/
+.cut-white{
+	position: absolute;
+	top: 1;
+	left: 1;
+	width: 273px;
+	height: 288px;
+	background: white;
+	z-index: 8;
+	margin-bottom: 40px;
+}
+/*整体移动动画*/
+.cut-yeshotbody .cut-yhbcontent:hover{
+	transform: translateY(-2px);
+}
+/*阴影*/
+.cut-yeshotbody .cut-yhbcontent:hover .cut-white{
+	box-shadow: rgb(220, 220, 220) 0 0 10px;
+}
+/*图片*/
+.cut-yeshotbody .cut-yhbcontent img{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 245px;
+	height: 245px;
+	z-index: 9;
+}
+/*灰色蒙层*/
+.cut-yeshotbody .cut-yhbcontent .cut-grey{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 245px;
+	height: 245px;
+	background: black;
+	opacity: 0;
+	z-index: 10;
+}
+.cut-yeshotbody .cut-yhbcontent:hover .cut-grey{
+	opacity: 0.4;
+}
+/*文字*/
+.cut-yeshotbody .cut-yhbcontent p{
+	position: absolute;
+	top: 260px;
+	width: 275px;
+	height: 30px;
+	background: white;
+	line-height: 30px;
+	z-index: 10;
+}
+.cut-yeshotbody .cut-yhbcontent i{
+	position: absolute;
+	top: 290px;
+	display: block;
+	position: absolute;
+	width: 275px;
+	height: 10px;
+	background-image: url(../img/pngShadow.png);
+	z-index: 10;
+}
+/*喜欢按钮*/
+.cut-yeshotbody .cut-yhbcontent .cut-like{
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 25px;
+	left: 25px;
+	background: url(../img/f1.png);
+	z-index: 11;
+	transform: translateY(-60px);
+	transition: all 0.2s;
+}
+/*下载图片按钮*/
+.cut-yeshotbody .cut-yhbcontent .cut-hotdownload{
+	cursor: pointer;
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	top: 25px;
+	right: 25px;
+	background: rgb(73, 157, 242);
+	border-radius: 5px;
+	z-index: 11;
+	transform: translateY(-60px);
+	transition: all 0.2s;
+}
+/*按钮中文字*/
+.cut-yeshotbody .cut-yhbcontent .cut-hotdownload text{
+	position: absolute;
+	line-height: 30px;
+	color: white;
+	left: 12px;
+}
+.cut-yeshotbody .cut-yhbcontent:hover .cut-like{
+	transform: translateY(0);
+}
+.cut-yeshotbody .cut-yhbcontent:hover .cut-hotdownload{
+	transform: translateY(0);
+}
+.cut-yeshotbody .cut-yhbcontent .cut-like:hover{
+	background: url(../img/f2.png);
+}
+.cut-yeshotbody .cut-yhbcontent .cut-hotdownload:hover{
+	background: rgb(1, 121, 242);
+}
+/*up图标*/
+.cut-yeshotbody .cut-yhbcontent .cut-up{
+	position: absolute;
+	width: 48px;
+	height: 44px;
+	top: 90px;
+	left: 120px;
+}
+/*up文字*/
+.cut-yeshotbody .cut-yhbcontent .cut-ups{
+	cursor: pointer;
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	top: 140px;
+	left: 70px;
+	color: rgb(1, 121, 242);
+	text-align: center;
+	z-index: 10;
+	border: rgb(1, 121, 242) solid 1px;
+	border-radius: 20px;
+}
+.cut-yeshotbody .cut-yhbcontent .cut-ups:hover{
+	color: white;
+	background: rgb(1, 121, 242);
+}
+/***************************************/
+.cut-bottom{
+	position: relative;
+	width: 100%;
+	height: 44px;
+	background: rgb(51, 51, 51);
+	color: rgb(123, 123, 123);
+	font-size: 15px;
+	line-height: 44px;
+}

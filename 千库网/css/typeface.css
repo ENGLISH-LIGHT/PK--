@@ -1,0 +1,1057 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 100%;
+	left: 0;
+}
+
+.box #png2top {
+	position: absolute;
+	background: white;
+	width: 600px;
+	height: 48px;
+	left: 30%;
+	margin: 10px;
+	top: 280px !important;
+	z-index: 9;
+	opacity: 0.5;
+	border: 1px solid darkblue;
+}
+
+#png2top p {
+	position: absolute;
+	left: 3%;
+	top: 30%;
+}
+
+.box .search {
+	position: absolute;
+	left: 1182px;
+	top: 290px;
+	cursor: pointer;
+}
+
+
+
+.box .ArtSearch-Key{
+	position: absolute;
+	font-size: 15px;
+	left: 580px;
+	top: 335px;
+}
+
+.box .ArtSearch-Key a{
+	float: left;
+	list-style: none;
+	margin: 10px;
+	cursor: pointer;
+}
+
+a:hover{
+	color: deepskyblue;
+}
+
+#download{
+	background-color: #323232;
+	height: 80px;
+}
+
+#download p{
+	position: relative;
+	font-size: 20px;
+	left: 550px;
+	color: white;
+	top: 27px;
+}
+
+.wa-introduce-wrap{
+	background-color: #484848;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.wa-introduce-wrap a{
+	
+	display: inline-block;
+	width: 219px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 34px;
+	color: #fff;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	background: #009eb9;
+	border-radius: 2px;
+}
+
+.jingpin{
+	width: 1200px;
+	margin: 0 auto;
+	font: inherit;
+	vertical-align: baseline;
+	padding: 0;
+	border: 0;
+}
+
+.project {
+    font-size: 24px;
+    color: #383838;
+    padding: 46px 0 20px;
+    }
+    
+   .project em.recom 
+   {
+    background-position: -53px 0px;
+}
+
+.project a {
+    font-size: 24px;
+    color: #383838;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+        font-size: inherit;
+        font-family: inherit;
+    vertical-align: baseline;
+
+}
+
+.project a:hover{
+	color: #009EB9;
+}
+
+
+
+.project a.more {
+    font-size: 18px;
+    color: #333;
+    float: right;
+}
+
+.project a.more:hover{
+	color: #009EB9;
+}
+
+.project a.more i {
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    right: 0;
+    background-image: url(http://static.588ku.com/imgPath/index/images/indexV3-icon.png);
+    background-repeat: no-repeat;
+    background-position: -9px -125px;
+    vertical-align: -5px;
+    margin-left: 5px;
+}
+
+a.more:hover i {
+    background-position: -261px -206px;
+}
+
+.project em {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    background-image: url(http://static.588ku.com/imgPath/element/images/pngInd-icon.png);
+    background-repeat: no-repeat;
+    vertical-align: -7px;
+    transition: all 2s ;
+}
+
+.project em:hover{
+	transform: rotate(360deg);
+}
+
+figure{
+	position:relative;
+	width:30%;
+	/*height: 300px;*/
+	/*浮动靠左*/
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	/*显示多出部分隐藏*/
+	overflow: hidden;
+	margin-right: -80px;
+	margin-bottom:50px ;
+}
+
+figure img{
+	width: 80%;
+	height: 50%;
+	
+	
+}
+
+.photo0 img{
+	
+	transition: all 1s;
+}
+
+.photo0:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo0 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo0:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo0 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo0:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+
+.photo1 img{
+	
+	transition: all 1s;
+}
+
+.photo1:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo1 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo1:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo1 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo1:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.photo2 img{
+	
+	transition: all 1s;
+}
+
+.photo2:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo2 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo2:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo2 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo2:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.photo3 img{
+	
+	transition: all 1s;
+}
+
+.photo3:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo3 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 100px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo3:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo3 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo3:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.photo4 img{
+	
+	transition: all 1s;
+}
+
+.photo4:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo4 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 90px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo4:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo4 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo4:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.photo5 img{
+	
+	transition: all 1s;
+}
+
+.photo5:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo5 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 90px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo5:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo5 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo5:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.photo6 img{
+	
+	transition: all 1s;
+}
+
+.photo6:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo6 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 90px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo6:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo6 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo6:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.photo7 img{
+	
+	transition: all 1s;
+}
+
+.photo7:hover img{
+	
+	filter: brightness(50%);
+}
+
+.photo7 h2{
+	position: absolute;
+	bottom: 50px;
+	left: 80px;
+	font-size: 20px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo7:hover h2{
+	transform: translateY(-100px);
+	color: white;
+	opacity: 1;
+}
+
+.photo7 p{
+	position: absolute;
+	bottom: 30px;
+	left: 120px;
+	font-size: 15px;
+	color: black;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.photo7:hover p{
+	transform: translateY(-100px) ;
+	color: white;
+	opacity: 1;
+}
+
+.jingpin .fl1 {
+	position: absolute;
+	left: 360px;
+	bottom: -480px;
+	font-size: 24px;
+	color: #383838;
+	padding: 27px 0 20px;
+}
+
+.fl1 a{
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+
+.fl1 em.classify {
+    background-position: -10px 0px;
+}
+
+.fl1 em{
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+	background-image: url(http://static.588ku.com/imgPath/element/images/pngInd-icon.png);
+	background-repeat: no-repeat;
+	vertical-align: -7px;
+	transition: all 2s;
+}
+
+.fl1 em:hover{
+	transform: rotate(360deg);
+}
+
+.jutifenlei{
+	margin-right: -39px;
+}
+
+.jutifenlei li{
+	width: 168px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: rgba(244,249,255,1);
+	box-shadow: 0px 0px 4px rgba(231,234,241,1);
+	margin-right: 35px;
+	margin-bottom: 22px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.fl{
+	float: left;
+}
+
+li:hover{
+	  background: #009eb9;
+}
+
+ul{
+	list-style: none;
+}
+
+.jutifenlei li a{
+	display: block;
+	color: #383838;
+}
+
+.jingpin .hot{
+	position: absolute;
+	left: 360px;
+	bottom: -880px;
+	font-size: 16px;
+	color: #383838;
+	padding: 27px 0 20px;
+	
+}
+
+.ziti em.flhot {
+    background-position: -88px 0px;
+}
+
+.ziti em{
+	
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+	background-image: url(http://static.588ku.com/imgPath/element/images/pngInd-icon.png);
+	background-repeat: no-repeat;
+	vertical-align: -7px;
+}
+
+.photo8{
+	position:absolute;
+	left: 50px;
+	top: 100px;
+	width: 350px;
+	height: 500px;
+	/*height: 300px;*/
+	/*浮动靠左*/
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	/*显示多出部分隐藏*/
+	overflow: hidden;
+	margin-right: -80px;
+	margin-bottom:50px ;	
+}
+
+.photo8 div{
+	position: absolute;
+	/*opacity: 0;*/
+	background: rgba(255,255,255,0);
+	left: 0px;
+	top: 0px;
+	width: 290px;
+	height: 300px;
+	border: 1px solid black; 
+}
+
+.photo8 div p{
+	position: absolute;
+	width: 290px;
+	top: 260px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.photo8 img{
+	transition: all 1s;
+}
+
+.photo8:hover img{
+	filter: brightness(50%);
+}
+
+.photo8 .xing{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 30px;
+	height: 25px;
+	opacity: 0;
+	background: white;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo8 .xing p{
+	position: absolute;
+	left: -130px;
+	top: 0px;
+}
+
+.photo8:hover .xing{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo8 .png{
+	position: absolute;
+	left: 130px;
+	background: deepskyblue;
+	top: 0px;
+	width: 50px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo8:hover .png{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo8 .png p{
+	position: absolute;
+	left: -120px;
+	top: 0px;
+	color: black;
+}
+
+.photo8 .psd{
+	position: absolute;
+	left: 215px;
+	background: lawngreen;
+	top: 0px;
+	width: 50px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo8:hover .psd{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo8 .psd p{
+	position: absolute;
+	left: -120px;
+	top: 0px;
+	color: black;
+}
+
+.photo9{
+	position:absolute;
+	left: 400px;
+	top: 100px;
+	width: 350px;
+	height: 500px;
+	/*height: 300px;*/
+	/*浮动靠左*/
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	/*显示多出部分隐藏*/
+	overflow: hidden;
+	margin-right: -80px;
+	margin-bottom:50px ;	
+}
+
+.photo9 div{
+	position: absolute;
+	/*opacity: 0;*/
+	background: rgba(255,255,255,0);
+	left: 0px;
+	top: 0px;
+	width: 290px;
+	height: 300px;
+	border: 1px solid black; 
+}
+
+.photo9 div p{
+	position: absolute;
+	width: 290px;
+	top: 260px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.photo9 img{
+	transition: all 1s;
+}
+
+.photo9:hover img{
+	filter: brightness(50%);
+}
+
+.photo9 .xing{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 30px;
+	height: 25px;
+	opacity: 0;
+	background: white;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo9 .xing p{
+	position: absolute;
+	left: -130px;
+	top: 0px;
+}
+
+.photo9:hover .xing{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo9 .png{
+	position: absolute;
+	left: 130px;
+	background: deepskyblue;
+	top: 0px;
+	width: 50px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo9:hover .png{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo9 .png p{
+	position: absolute;
+	left: -120px;
+	top: 0px;
+	color: black;
+}
+
+.photo9 .psd{
+	position: absolute;
+	left: 215px;
+	background: lawngreen;
+	top: 0px;
+	width: 50px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo9:hover .psd{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo9 .psd p{
+	position: absolute;
+	left: -120px;
+	top: 0px;
+	color: black;
+}
+
+.photo10{
+	position:absolute;
+	left: 750px;
+	top: 100px;
+	width: 350px;
+	height: 500px;
+	/*height: 300px;*/
+	/*浮动靠左*/
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	/*显示多出部分隐藏*/
+	overflow: hidden;
+	margin-right: -80px;
+	margin-bottom:50px ;	
+}
+
+.photo10 div{
+	position: absolute;
+	/*opacity: 0;*/
+	background: rgba(255,255,255,0);
+	left: 0px;
+	top: 0px;
+	width: 290px;
+	height: 300px;
+	border: 1px solid black; 
+}
+
+.photo10 div p{
+	position: absolute;
+	width: 290px;
+	top: 260px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.photo10 img{
+	transition: all 1s;
+}
+
+.photo10:hover img{
+	filter: brightness(50%);
+}
+
+.photo10 .xing{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 30px;
+	height: 25px;
+	opacity: 0;
+	background: white;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo10 .xing p{
+	position: absolute;
+	left: -130px;
+	top: 0px;
+}
+
+.photo10:hover .xing{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo10 .png{
+	position: absolute;
+	left: 130px;
+	background: deepskyblue;
+	top: 0px;
+	width: 50px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.photo10:hover .png{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo10 .png p{
+	position: absolute;
+	left: -120px;
+	top: 0px;
+	color: black;
+}
+
+.photo10 .psd{
+	position: absolute;
+	left: 215px;
+	background: lawngreen;
+	top: 0px;
+	width: 50px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.photo10:hover .psd{
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+.photo10 .psd p{
+	position: absolute;
+	left: -120px;
+	top: 0px;
+	color: black;
+}
+
+/* 热搜 */
+.hot-search-04{
+    position: absolute;
+    margin-top: 1px;
+    top: 100%;
+    left: 8px;
+    background-color: #fff;
+    border: 1px solid rgba(204, 204, 204, 0.78);
+    border-top: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 98%;
+    z-index: 5;
+
+}
+.near-search-04{
+    border-bottom: 1px solid rgba(204, 204, 204, 0.78);
+}
+.near-search-04>a{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 25px;
+    background:url(../img/39.png) no-repeat -98px -252px;
+    color: #1B63AE;
+    height: 32px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.hot-search-04>ul>li>a>span:nth-child(1){
+    display: inline-block;
+    width: 200px;
+    margin-right: 45%;
+    margin-top:8px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #6e6e6e;
+    font-size: 14px;
+
+}
+
+.hot-search-04>ul>li>a>span:nth-child(2){
+    display: inline-block;
+    /* margin-right:20%; */
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+    color: #6e6e6e;
+    font-size: 14px;
+
+}
+.hot-gif-04{
+    
+    background: url(../img/40.gif) no-repeat ;
+
+    background-position: 60px 7px;
+}
+
+.bottom{
+	 left:0px;
+	 position:fixed;
+	 width:100%;
+	 height:50px;
+	 background-color: #333333;
+	 color:#FFF;
+	 text-align:center;
+	 font-size:15px;
+	 
+	 bottom:0px;
+}
+
+.bottom img{
+	position: relative;
+	width: 65px;
+	height: 45px;
+	left: 40%;
+	top: -20px;
+}
+
+

@@ -1,0 +1,356 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	width: 100%;
+	height: 100%;
+}
+.top {
+	width: 88%;
+	margin: 0 auto;
+	height: 80px;
+	display: flex;
+
+}
+.logo {
+	flex: 1.5;
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.logo a {
+    display: inline-block;
+    width: 104px;
+    height: 33px;
+    /* margin-left: 75px; */
+    background: url(http://static.588ku.com/imgPath/index/images180509/ku-logoNewTopV1.svg) no-repeat center center;
+}
+li {
+	list-style: none;
+	display: inline-block;
+}
+.top-left {
+	flex: 9;
+	display: flex;
+	align-items: center;
+}
+.top-left li {
+	flex: 1;
+	text-align: center;
+	font-size: 16px;
+	position: relative;
+}
+.top-right {
+	flex: 4;
+	display: flex;
+	align-items: center;
+}
+.top-right li {
+	flex: 1;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0, 0, 0, .4);
+}
+.top-right li i {
+	display: inline-block;
+    margin-right: 2px;
+    width: 17px;
+    height: 16px;
+    vertical-align: -1px;
+    background: url(http://static.588ku.com/imgPath/public/images/qk-vipgather-icon.svg) no-repeat center;
+}
+.top-right li.login a{
+	/* margin: 5px; */
+	display: block;
+	margin: 0 5px 0 5px;
+	padding: 2px 0 2px 0;
+	border-radius: 12px;
+	background-color: #008BFF;
+	color: #fff;
+	text-decoration: none;
+}
+.top-left li:hover {
+	font-weight: bolder;
+	color: #666;
+}
+.top-right li:hover {
+	color: #008BFF;
+}
+.content {
+	width: 100%;
+}
+.content .searchBox {
+	width: 100%;
+	height: 420px;
+	background: url(http://static.588ku.com/imgPath/templet/images/tpl-banner001.jpg) no-repeat center;
+}
+.searchLeft {
+	width: 75%;
+	float: left;
+	display: inline-block;
+}
+.searchBox h2,p{
+	text-align: center;
+	color: #fff;
+}
+.searchBox h2 {
+	font-size: 36px;
+	padding-top: 113px;
+	font-weight: normal;
+}
+.searchBox p {
+	font-size: 18px;
+	padding-top:15px ;
+}
+.search {
+	width: 625px;
+	height: 50px;
+	margin: 15px auto;
+	border-radius: 4px;
+	border: 1px solid #ff6b00;
+	background-color: #fff;
+	position: relative;
+}
+.searchInput {
+	width: 80%;
+	height: 50px;
+	padding-left: 22px;
+	float: left;
+	border: none;
+	outline: none;
+}
+.recentSearch {
+	width: 83%;
+	border: 1px solid #ff6b00;
+	position: absolute;
+	top: 50px;
+	background-color: #fff;
+	z-index: 100;
+	opacity: 0.9;
+}
+.hide {
+	display: none;
+}
+.recentSearch div {
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+.recentSearch div span:nth-child(1) {
+	color: #ff6b00;
+	display: inline-block;
+	float: left;
+	padding-left: 22px;
+}
+.recentSearch div span:nth-child(2) {
+	color: #ff6b00;
+	display: inline-block;
+	float: right;
+	padding-right: 22px;
+}
+.searchBtn {
+	width: 16.2%;
+	height: 48px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	background-color: #ff6b00;
+	border-radius: 4px;
+	margin: 1px 0 1px 0;
+	color: #fff;
+}
+
+.searchRight {
+	color: #fff;
+	width: 24.5%;
+	height: 420px;
+	display: inline-block;
+	/* text-align: center; */
+	position: relative;
+	
+}
+.rightBox {
+	width: 75%;
+	height: 420px;
+	margin: 0 auto;
+	background: rgba(23,23,23,.3);
+	position: absolute;
+	top: 0;
+}
+.searchRight .good {
+	padding-top: 104px;
+}
+.searchRight li {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 22px;
+	padding-left: 15px;
+}
+
+.searchRight li::before {
+	content: "·";
+    display: inline-block;
+    padding-right: 13px;
+    font-size: 60px;
+    color: #fff;
+    vertical-align: -15px;
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+}
+.downloadFree {
+	margin: 40px auto 0;
+    width: 188px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(to right, #FF6B00 0%,#FFA400 100%);
+	border-radius: 4px;
+
+}
+.hotRecommend {
+	width: 100%;
+	height: 510px;
+	padding: 46px 0 0 0;
+}
+.hotBox {
+	width: 90%;
+	margin: 0 auto;
+}
+.hotBox .hotLeft {
+	/* width: 245px; */
+	width: 20%;
+    height: 463px;
+    overflow: hidden;
+    position: relative;
+    background: url(http://static.588ku.com/imgPath/templet/images/tpl-hot-recom.jpg) no-repeat center;
+    text-align: center;
+    display: inline-block;
+}
+.hotTitle {
+	font-size: 24px;
+    color: #fff;
+    padding-top: 40px;
+}
+.hotUl {
+	margin-top: 140px;
+}
+.hotUl li {
+	font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #ffc9ae;
+    /* width: 92px; */
+    width: 30%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ee8753;
+    overflow: hidden;
+    margin: 0 6px 23px;
+}
+.hotUl li:hover {
+	background-color: #fff;
+	color: #ee8753;
+}
+.hotRight {
+	/* width: 915px; */
+	width: 73%;
+	height: 463px;
+	display: inline-block;
+	margin-left:5%; 
+}
+.hotRight div {
+	/* width: 285px; */
+	width: 30%;
+    height: 200px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   float: left;
+}
+.hotRight div img,singleBox {
+	/* width: 285px; */
+	width: 100%;
+    height: 200px;
+}
+.hotRight div .zhezhao {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	opacity: 0.3;
+	color: #fff;
+	/* transform: translateY(100px) */
+	transform: translateY(165px); 
+	transition:all  0.2s ;
+}
+.wrap {
+	position: absolute;
+	display: block;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	transform: translateY(95px);
+	transition:all  0.2s ;
+}
+.singleBox:hover .zhezhao {
+	transform: translateY(0); 
+	opacity: 0.5;
+}
+.singleBox:hover .wrap {
+	transform: translateY(0);
+}
+.hotRight div span {
+	width: 100%;
+	text-align: center;	
+	display: inline-block;
+	color: #fff;
+}
+.hotRight div span:nth-child(1) {
+	font-size: 16px;
+    font-weight: bold;
+}
+.hotRight div span:nth-child(2) {
+	width: 50%;
+	border-top: 1px solid #fff;
+
+}
+.hotRight div span:nth-child(3) {
+	font-size: 14px;
+	margin-top: 7px;
+}
+.mar-top {
+	margin-top: 25px;
+}
+.footer {
+	width: 100%;
+	/* height: 100px; */
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.footer h2 {
+	font-size: 32px;
+    color: #ff7100;
+    padding-bottom: 13px;
+    font-weight: bold;
+}
+.footer span {
+	color: #a6a6a6;
+    font-size: 16px;
+}

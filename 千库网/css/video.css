@@ -1,0 +1,787 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: #ffffff;
+    min-width: 1200px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+/*导航栏部分*/
+.root-nav {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.root-ul {
+    width: 1460px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.root-nav .div-logo {
+    display: block;
+    float: left;
+    margin-right: 18px;
+}
+
+.root-nav .div-logo a {
+    margin: 18px 0;
+    float: left;
+    display: inline-block;
+}
+
+.root-nav .div-logo .a1 {
+    width: 127px;
+    height: 42px;
+    background: url("../img/video/base-icon.png") no-repeat;
+    margin-right: 15px;
+}
+
+.div-logo .a2 {
+    width: 100px;
+    height: 42px;
+    font-size: 20px;
+    color: #0082df;
+    line-height: 42px;
+}
+
+.ul-nav {
+    float: left;
+}
+
+.ul-nav li {
+    float: left;
+}
+
+.ul-nav li > a:hover {
+    color: #6869d1;
+}
+
+.ul-nav a {
+    display: block;
+    padding: 0 19px;
+    height: 78px;
+    line-height: 78px;
+    font-size: 16px;
+    color: #383838;
+    cursor: pointer;
+}
+
+.div-login {
+    float: right;
+}
+
+.ul-login {
+    float: right;
+}
+
+.ul-login li {
+    float: left;
+    padding-bottom: 12px;
+}
+
+.li-login a {
+    margin-top: 20px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 0 25px;
+    border: 1px solid #dbdbdb;
+    border-radius: 30px;
+    color: #495965;
+}
+
+.li-login a:hover {
+    background-color: #6869d1;
+    border-color: #6869d1;
+    color: #ffffff;
+}
+
+.li-login .a2 {
+    color: #0082df;
+}
+
+.a-return {
+    float: right;
+    color: #383838;
+    font-size: 16px;
+    height: 78px;
+    line-height: 78px;
+    padding: 0 10px;
+}
+
+.a-return:hover {
+    color: #6869d1;
+}
+
+.li-nav .div-popup {
+    display: none;
+    position: absolute;
+    width: 543px;
+    background-color: #ffffff;
+    text-align: center;
+    top: 79px;
+    margin-left: -254px;
+    z-index: 99;
+    box-shadow: 0 4px 5px 1px rgba(100, 104, 203, 0.9);
+}
+
+#a-vip:hover + .div-popup {
+    display: block;
+}
+
+.div-popup .em-vip-icon {
+    display: block;
+    margin: 30px auto 10px;
+    width: 60px;
+    height: 43px;
+    background: url("../img/video/vl-indexIcon.png") no-repeat 0 -98px;
+}
+
+.div-popup .info {
+    position: relative;
+    display: inline-block;
+    color: #6768cd;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 26px;
+}
+
+.div-popup .info:before {
+    content: "";
+    height: 0;
+    border-bottom: 1px solid #6468cb;
+    position: absolute;
+    top: 25%;
+    width: 50px;
+    left: -60px;
+}
+
+.div-popup .info:after {
+    content: "";
+    height: 0;
+    border-bottom: 1px solid #6468cb;
+    position: absolute;
+    top: 25%;
+    width: 50px;
+    right: -60px;
+}
+
+.div-popup .ul-info {
+    /*margin: 0 auto;*/
+    text-align: center;
+    margin-left: 50px;
+}
+
+.ul-info li {
+    display: inline-block;
+    min-width: 170px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 25px 13px;
+    position: relative;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+}
+
+.div-popup .ul-info li:before {
+    content: "·";
+    font-size: 20px;
+    color: rgb(103, 104, 205);
+    margin-right: 20px;
+}
+
+.div-popup .a-open {
+    display: block;
+    width: 270px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    background-color: #6768cd;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 23px auto 30px;
+    border-radius: 30px;
+}
+
+/*搜索框部分*/
+.div-search-box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.div-search-box .div-bg {
+    width: 100%;
+    height: 400px;
+    background: url("../img/video/searchBg.jpg") no-repeat center;
+    overflow: hidden;
+}
+
+.div-search {
+    position: absolute;
+    width: 650px;
+    left: 50%;
+    top: 165px;
+    margin-left: -350px;
+    text-align: center;
+    z-index: 89;
+}
+
+.li-search {
+    width: 72px;
+    height: 28px;
+    padding-top: 6px;
+    float: left;
+    color: #f8fffa;
+    font-size: 15px;
+    margin-right: 3px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.on {
+    background-color: #6866d4;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box #input-search {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: none;
+    display: block;
+    position: relative;
+    width: 499px;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+input::-webkit-input-placeholder {
+    color: whitesmoke;
+}
+
+.search-box #a-search {
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 112px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #6467d2;
+    display: block;
+    font-size: 18px;
+    color: #fefdfd;
+}
+
+.search-box span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url("../img/video/base-icon.png") no-repeat -72px -160px;
+}
+
+.search-sug {
+    display: none;
+    position: absolute;
+    top: 87px;
+    background: #222;
+    border: 1px solid #4e3da8;
+    border-top: none;
+    width: 537px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.search-sug a {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    display: block;
+}
+
+.search-sug .sug-class {
+    color: #ffffff;
+    position: relative;
+    font-size: 14px;
+    float: left;
+}
+
+.search-sug a:nth-child(-n+3) .sug-class::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 10px;
+    right: -31px;
+    top: 15px;
+    background: url("../mp4/video/search-hot.gif");
+}
+
+.search-sug .sug-entry {
+    color: #ffffff;
+    font-size: 14px;
+    float: right;
+}
+
+.hot-search {
+    width: 650px;
+    overflow: hidden;
+    padding-top: 8px;
+}
+
+.hot-search span {
+    color: #fff;
+    margin-right: 16px;
+    float: left;
+}
+
+.hot-search div {
+    width: 500px;
+    height: 20px;
+    overflow: hidden;
+    text-align: left;
+    float: left;
+}
+
+.hot-search div a {
+    display: inline-block;
+    margin-right: 12px;
+    color: #fff;
+}
+
+.hot-search div a:hover {
+    color: #6869d1;
+}
+
+/*内容部分*/
+.div-content-box {
+    width: 1460px;
+    margin: 0 auto;
+}
+
+.div-content-box .div-classify {
+    margin: 40px -36px 30px 0;
+}
+
+.div-classify .h1 {
+    width: 463px;
+    height: 128px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 32px;
+    text-align: center;
+    float: left;
+}
+
+.div-classify .h1 .head {
+    padding: 11px 0;
+}
+
+.div-classify .head a {
+    font-size: 18px;
+    color: #383838;
+}
+
+.div-classify .head em {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../img/video/vl-indexIcon.png") no-repeat;
+    vertical-align: -16px;
+    margin-right: 6px;
+}
+
+.div-classify .head1 em {
+    background-position: 0 0;
+}
+
+.div-classify .head2 em {
+    background-position: -76px 0;
+}
+
+.div-classify .head3 em {
+    background-position: -151px 0;
+}
+
+.div-classify .body a {
+    display: inline-block;
+    font-size: 14px;
+    color: #383838;
+    margin: 0 10px 5px;
+}
+
+.h1 a:hover {
+    color: #6869d1;
+}
+
+.div-content-box .div-video-list {
+    height: 33px;
+    padding: 28px 0 15px 0;
+}
+
+.div-video-list .a1 {
+    font-size: 24px;
+    float: left;
+    height: 33px;
+    color: #000;
+}
+
+.div-video-list .a2 {
+    height: 26px;
+    font-size: 18px;
+    color: #888;
+    float: right;
+    background: url("../img/video/icon.png") no-repeat 45px -23px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.clear-fix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.ul-video-box {
+    margin-right: -28px;
+}
+
+.ul-video-box .li-video {
+    width: 344px;
+    height: 190px;
+    margin-right: 28px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    float: left;
+}
+
+.ul-video-box .img-box {
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ul-video-box .img-box > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ul-video-box a img {
+    background: none;
+    display: inline;
+    width: 100%;
+    height: inherit;
+}
+
+.ul-video-box .img-box video {
+    display: none;
+    object-fit: fill;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.ul-video-box .img-box em {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: 30px;
+    height: 21px;
+    background: url("../img/video/icon.png") no-repeat -289px 0;
+}
+
+.ul-video-box .hover-content {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    transition: all 0.2s;
+    z-index: 9;
+}
+
+.hover-content .fav {
+    border: 1px solid #cacac9;
+    width: 27px;
+    height: 30px;
+    margin-right: 17px;
+    font-size: 12px;
+    background: url("../img/video/base-icon.png") no-repeat -96px -154px #f3f2f2;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.img-box:hover .hover-content {
+    top: 10px;
+}
+
+.img-box:hover em {
+    display: none;
+}
+
+.hover-content .down {
+    width: 70px;
+    background: #6869d1;
+    font-size: 14px;
+    margin-right: 11px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.hover-content .fav:hover {
+    color: #f25751;
+    background-position: -96px -185px;
+}
+
+.hover-content .down:hover {
+    background-color: #7b7cd3;
+}
+
+.hover-content i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: -2px;
+    margin-left: 5px;
+    background: url("../img/video/base-icon.png") no-repeat -101px -227px;
+
+}
+
+.li-audio {
+    position: relative;
+    width: 288px;
+    height: 145px;
+    padding: 25px 28px 20px;
+    background-color: #f1f1f1 !important;
+    border-radius: 8px;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    float: left;
+}
+
+.li-audio:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.li-audio > div {
+    width: 100%;
+    height: 100%;
+}
+
+.div-content > a {
+    position: absolute;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.li-audio .source-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.li-audio .audio-info {
+    width: 188px;
+    padding-left: 10px;
+    float: left;
+}
+
+.audio-info .audio-name {
+    margin-bottom: 10px;
+    color: #383838;
+    width: 188px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+}
+
+.audio-info .format {
+    margin-bottom: 10px;
+}
+
+.audio-info .format span {
+    color: #a6a6a6;
+    font-size: 14px;
+    float: left;
+    position: relative;
+}
+
+.audio-info .format a {
+    position: relative;
+    color: #a6a6a6;
+    font-size: 14px;
+    float: right;
+    text-decoration: underline;
+}
+
+.audio-info .format a:hover {
+    color: #6869d1;
+}
+
+.audio-info .fav {
+    position: relative;
+    margin-top: 2px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #d5d5d5;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    background: url("../img/video/vl-indexIcon.png") no-repeat -33px -61px;
+    float: right;
+}
+
+.audio-info .down {
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    border-radius: 16px;
+    background: linear-gradient(to right, #667eea 0%, #784fa4 100%);
+    float: left;
+}
+
+.bglist-505 .down i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: -2px;
+    margin-left: 5px;
+    background: url("../img/video/base-icon.png") no-repeat -101px -227px;
+}
+
+.audio-box {
+    position: relative;
+    padding-top: 0 !important;
+    margin-top: 15px !important;
+    float: left;
+    width: 100%;
+}
+
+.audio-box .auto-play {
+    width: 25px;
+    height: 25px;
+    background: url("../img/video/vl-indexIcon.png") no-repeat 5px -64px;
+    cursor: pointer;
+    margin-left: 12px;
+    float: left;
+    z-index: 50;
+}
+
+.audio-box audio {
+    width: 300px;
+    height: 54px;
+}
+
+.audio-box .start-time {
+    float: left;
+    color: #666;
+    margin: 3px 12px 0 14px;
+    font-size: 12px;
+}
+
+.audio-box .time-bar {
+    width: 149px;
+    height: 24px;
+    float: left;
+    cursor: pointer;
+    background-color: #999;
+}
+
+.time-bar img {
+    position: absolute;
+    width: 149px;
+    height: 24px;
+}
+
+.time-bar .move-color {
+    display: block;
+    width: 0;
+    height: 24px;
+    background-color: #6869d1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.audio-box .end-time {
+    float: left;
+    color: #666;
+    margin-left: 12px;
+    font-size: 12px;
+    margin-top: 3px;
+}

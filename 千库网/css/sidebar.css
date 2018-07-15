@@ -1,0 +1,248 @@
+@charset "utf-8";
+.abox{
+	position:fixed;
+	top:60px;
+	right:60px;
+	width:110px;
+	height:114px;
+	background:url(../img/sidebar/8a113c6761538d50ec8901dda49be850_comVip-head-iconV2.png) no-repeat center;
+	animation: two-up-down 2s infinite linear;
+	cursor: pointer;
+	z-index:199;
+}
+@keyframes two-up-down{
+	0%,70%,100%{top:70px}
+	35%{top:90px}
+	
+}
+.aboxd{
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	color: black;
+	/*border: 1px solid white;*/
+	font-size: 20px;
+}
+.sidebarDiv{
+	position:fixed;
+	right:0;
+	bottom:170px;
+	height:328px;
+	margin-top:-164px;
+	z-index:100;
+	font-size: 100%;
+}
+.sidebarUl{
+	list-style:none;
+}
+.sidebarLi{
+	width: 44px;
+	in-height: 51px;
+	background: #fff;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	cursor: pointer;
+	position: relative;
+	display: list-item;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+.gotoTop{
+	width: 44px;
+	height: 51px;
+	background: #fff;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	font-size: 60px;
+	font-weight: 900;
+	color: rgba(0,0,0,0.7);
+	background: #e8e8e8;
+}
+.gotoTop:hover{
+	background: #e0e0e0;
+}
+.sidebarA{
+	display: block;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 12px;
+	padding: 9px 0;
+	font-family: '微软雅黑';
+	text-decoration: none;
+	margin: 0;
+	cursor: pointer;
+}
+.sidebarLi:hover .sidebarA{
+	background: rgb(15,138,253)
+}
+
+#sidebarUl-2:hover .callCS{
+    display: initial
+}
+.callCS{
+	width: 289px;
+    top: -54px;
+    text-align: left;
+    right: 44px;
+    position: absolute;
+    z-index: 99;
+    border: 1px solid #e8e8e8;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    background: white;
+    display: none;
+	cursor:  default;
+}
+.box-title{
+	height: 40px;
+    line-height: 40px;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    margin: 0;
+}
+.callCS-text{
+	height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 100%;
+}
+.companyVIP{
+	position: absolute;
+    right: 44px;
+    top: -54px;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    z-index: 90;
+    display: none;
+	cursor:  default;
+}
+.companyVIP-img{
+    width: 517px;
+	height: 209px;
+	background: url(../img/sidebar/20180711224044.png) no-repeat;
+}
+
+#sidebarUl-3:hover .companyVIP{
+    display: initial
+}
+
+.qqUnion{
+	width: 238px;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    background: #fff;
+    padding-bottom: 8px;
+    text-align: center;
+    z-index: 90;
+    position: absolute;
+    right: 44px;
+    top: -54px;
+    cursor: default;
+    display: none;
+}
+#sidebarUl-4:hover .qqUnion{
+    display: initial
+}
+.qqUnion-div{
+	position: relative;
+	height: 40px;
+	line-height:3  ;
+}
+.qqUnion-text{
+	width: 140px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 14px;    
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10px;
+    font: inherit;
+    vertical-align: baseline;
+}
+.qqUnion-inf{
+	width: 48px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    margin-top:10px;
+    line-height: 20px;
+    border: 1px solid #008aff;
+    border-radius: 4px;
+    font-size: 12px;
+    padding-bottom: 0;
+    font-weight: normal;
+    background: none;
+}
+.qqUnion-inf-full
+{
+    border-color: #999;
+    color: #999;
+}
+.qqUnion-inf-unfull{
+	border-color: #008aff;
+    color: #008aff;
+    cursor: pointer;
+}
+
+.qqUnion-inf-unfull:hover{
+	border-color: #008aff;
+    color: white;
+    background: #008aff;
+    cursor: pointer;
+}
+#sidebarUl-6:hover .clickMeMoney{
+    display: initial
+}
+.clickMeMoney{
+    width: 230px;
+    height: 235px;
+    top: -54px;
+    right: 44px;
+    position: absolute;
+    background: rgb(240,203,107);
+    z-index: 7;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e8e8e8;
+    cursor: default;
+    display: none;
+    text-align: center;
+}
+.clickMeMoney-p{
+    font-size: 20px;
+}
+.clickMeMoney-div{
+    width: 100%;
+    height: 100%;
+	background: url("../img/sidebar/profit-icon.png") no-repeat;
+	position: absolute;
+	left: 20%;
+	top:20%
+}
+
+.clickMeMoney-btn{
+    margin: 8px auto 0;
+    width: 174px;
+    height: 33px;
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 25px;
+	background:#fb4a02;
+	cursor: pointer;
+}

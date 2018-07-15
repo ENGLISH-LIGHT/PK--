@@ -1,0 +1,123 @@
+@charset "utf-8";
+.headerDiv{
+    margin: 0;
+    padding: 0;
+    background: white;
+    width: 100%;
+    height: 80px;
+}
+.infHeaderDiv{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+.header-cut1{
+    margin: 20px;
+	height: 100%;
+	width: 104px;
+    overflow: hidden;
+    background: url(../img/header/a46c0b07322f910f0cee3756df25013f_ku-logoNewTopV1.png) no-repeat;
+    float: left;
+}
+.header-cut2{
+	list-style: none;
+	position: relative;
+    margin: 0;
+    padding: 0;
+	left:20px
+}
+.header-cut2-li{
+    margin-right: 10px;    
+    float: left;
+    display: list-item;
+    position: relative;
+    margin: 24px 0;
+    width: 104px;
+    height: 33px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.header-cut2-li-a{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color:  #323232;
+    text-decoration:none;
+
+}
+.header-cut2-li:hover{
+	
+    /*background: #000000;*/
+}
+.header-cut2-li:hover .header-cut2-li-a{
+    color: #121212;
+    font-weight: 600;
+    display: initial;
+}
+.header-cut2-li-div{
+	width: 560px;
+    position: absolute;
+    margin: 0;
+    background: #fff;
+    top: 30px;
+    left: 0;
+    z-index: 100;
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.05);
+    display: none;
+    cursor: default;
+}
+.header-cut2-li:hover .header-cut2-li-div{
+    display: initial;
+	}
+.header-cut2-li-div_p1{
+	position: relative;
+	left: 10px;
+	top:10px;
+	font-size: 16px;
+	color: #484848;
+	font-family: "微软雅黑";
+}
+.header-cut2-li-div_p2{
+	position: absolute;
+	left: 120px;
+	top:10px;
+	font-size: 16px;
+	color: #484848;
+	/*margin: 10px;*/
+	font-family: "微软雅黑";
+}
+
+.header-cut2-li-div_classiP{
+	position: relative;
+	left: 10px;
+	top:30px;
+	font-size: 20px;
+	margin-top: 40px;
+	color: #484848;
+	font-family: "微软雅黑";
+}
+
+.header-cut2-li-div_classiP_all{
+	position:relative;
+	color: #000000;
+	left: 0px;  
+	top:20px;
+	font-size: 16px;
+	margin: 10px;
+	display: inline-block;
+    padding: 0 8px;
+    border-radius: 6px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    /*background: orange;*/
+}
+.header-cut2-li-div_classiP_all:hover{
+	background: orange;
+	color: white;
+}
+.header-cut3{
+    margin: 0;
+	
+}

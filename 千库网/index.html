@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/sidebar.css" /> 
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/navigation.css" />
+	</head>
+	<!--<body style="background: whitesmoke;">-->
+	<body onclick="clickWater()">
+		<img class="logoimg" src="img/navigation/logo.png" /> 
+		<div style="height: 50px;width: 100%;"></div>
+		<canvas id='canvas' width='2000px' height="1200" style="position: fixed;top: 0;left: 0;z-index: 199;pointer-events:none;"></canvas>
+		<div id="bodyDiv">
+			 <div class="canvasDiv">
+			 	<div class="searchDiv">	 		
+				 	<a class="searchTxt searchTxt1" style="color: rgb(15,138,253);" onclick="clickSearchItem(0)">元素</a>
+				 	<a class="searchTxt searchTxt2" onclick="clickSearchItem(1)">艺术字</a>
+				 	<a class="searchTxt searchTxt3" onclick="clickSearchItem(2)">背景</a>
+				 	<a class="searchTxt searchTxt4" onclick="clickSearchItem(3)">模板</a>
+				 	<br/>
+					<input type="text" id="searchBox" class="searchBox" placeholder="共1024张/昨日已更新5张" />
+					<div id="searchBtn" class="searchBtn">
+						<img src="img/navigation/search.png" style="margin:11px 26px;"/>
+					</div>
+					<div class="hotDiv">
+						<ul class="hotUl">
+							<li onmousedown="clickHotItem(this)"><p style="color: red;">世界杯</p><img src="img/navigation/search-hot.gif"/></li>
+							<li onmousedown="clickHotItem(this)"><p style="color: red;">光</p></li>
+							<li onmousedown="clickHotItem(this)"><p style="color: red;">大暑</p><img src="img/navigation/search-hot.gif"/></li>
+							<li onmousedown="clickHotItem(this)"><p>科技</p></li>
+							<li onmousedown="clickHotItem(this)"><p>水</p></li>
+							<li onmousedown="clickHotItem(this)"><p>边框</p></li>
+							<li onmousedown="clickHotItem(this)"><p>荷花</p></li>
+							<li onmousedown="clickHotItem(this)"><p>云</p></li>
+						</ul>
+					</div>
+			 	</div>
+			 	<div class="rollDiv">
+			 		<img class="rollImg" src="img/navigation/roll(1).png" ondragstart="return false"/>
+			 		<img class="rollImg" src="img/navigation/roll(1).png" style="display: none;" ondragstart="return false"/>
+			 		<ul class='rollUl'>
+			 			<li class="rollLi" onmouseover="mouseOverRollLi(0)" onmouseout="mouseOutRollLi()"></li>
+			 			<li class="rollLi" onmouseover="mouseOverRollLi(1)" onmouseout="mouseOutRollLi()"></li>
+			 			<li class="rollLi" onmouseover="mouseOverRollLi(2)" onmouseout="mouseOutRollLi()"></li>
+			 			<li class="rollLi" onmouseover="mouseOverRollLi(3)" onmouseout="mouseOutRollLi()"></li>
+			 			<li class="rollLi" onmouseover="mouseOverRollLi(4)" onmouseout="mouseOutRollLi()"></li>
+			 			<li class="rollLi" onmouseover="mouseOverRollLi(5)" onmouseout="mouseOutRollLi()"></li>
+			 		</ul>
+			 	</div>
+			 	
+			 </div>
+			 <div class="canvasDiv2">
+				<div class="imgBox1_div">
+					<img src="img/navigation/imgshow(1).png" /> 
+					<div><div></div><p>活动-原创大赛</p></div>
+				</div>
+				<div class="imgBox1_div">
+					<img src="img/navigation/imgshow(2).png" /> 
+					<div><div></div><p>元素-夏日清新</p></div>
+				</div>
+				<div class="imgBox1_div">
+					<img src="img/navigation/imgshow(3).png" /> 
+					<div><div></div><p>文案集-网络热语</p></div>
+				</div>
+				<div class="imgBox1_div">
+					<img src="img/navigation/imgshow(4).png" /> 
+					<div><div></div><p>模板-企业文化</p></div>
+				</div>
+				
+			</div>
+			<div class="canvasDiv3">
+				<div class="imgBox2_title">
+					<p class="imgBox2_p1">免扣元素专题 </p>
+					<a class="imgBox2_p2" href="#">更多图片>> </a>
+				</div>
+				<div class="imgBox2_div">
+					<br />
+					<br />
+					<div>
+						<img src="img/navigation/imgshow2(1).png" /> 
+						<p>地标元素</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(2).png" /> 
+						<p>夏日西瓜</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(3).png" /> 
+						<p>夏季游泳</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(4).png" /> 
+						<p>mbe边框</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(5).png" /> 
+						<p>盆栽</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(6).png" /> 
+						<p>俄罗斯世界杯</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(7).png" /> 
+						<p>通用图标</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(8).png" /> 
+						<p>商用【水面】</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(9).png" /> 
+						<p>水墨山水</p>
+					</div>
+					<div>
+						<img src="img/navigation/imgshow2(10).png" /> 
+						<p>光-放射光</p>
+					</div>
+				</div>
+			</div>
+			<div style="height: 50px;width: 100%;"></div>
+		</div>
+		<div class="canvasDivEnd">
+			
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript" src="js/sidebar.js" ></script>
+		<script type="text/javascript" src="js/navigationheader.js" ></script>
+		<script type="text/javascript" src="js/navigation.js" ></script>
+	</body>
+</html>
+ 
